@@ -1,0 +1,20 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: results-stg
+  namespace: flux-system
+spec:
+  healthChecks:
+  - kind: Deployment
+    name: results
+    namespace: stginstavote
+  interval: 1m0s
+  path: ./deploy/results/stg
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: instavote
+  targetNamespace: stginstavote
+  timeout: 2m0s
+
