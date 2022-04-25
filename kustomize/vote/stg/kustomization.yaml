@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../base/
+patchesStrategicMerge:
+- ingress.yaml
+images:
+- name: schoolofdevops/vote:v4
+  newName: haydercyber/vote
+  newTag: main-dda38ce1-1650363871 # {"$imagepolicy": "flux-system:vote:tag"}
