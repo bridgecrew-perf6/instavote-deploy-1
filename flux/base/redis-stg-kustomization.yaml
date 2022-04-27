@@ -9,7 +9,7 @@ spec:
     name: redis
     namespace: stginstavote
   interval: 1m0s
-  path: ./deploy/redis/stg
+  path: ./kustomize/redis/stg
   prune: true
   sourceRef:
     kind: GitRepository

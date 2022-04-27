@@ -23,6 +23,6 @@ spec:
     kind: GitRepository
     name: instavote
   update:
-    path: ./deploy/vote/stg
+    path: ./kustomize/vote/stg
     strategy: Setters
 

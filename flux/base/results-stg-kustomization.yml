@@ -10,7 +10,7 @@ spec:
     name: results
     namespace: stginstavote
   interval: 1m0s
-  path: ./deploy/results/stg
+  path: ./kustomize/results/stg
   prune: true
   sourceRef:
     kind: GitRepository

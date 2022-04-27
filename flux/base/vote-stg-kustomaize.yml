@@ -11,7 +11,7 @@ spec:
     name: vote
     namespace: stginstavote
   interval: 1m0s
-  path: ./deploy/vote/stg/
+  path: ./kustomize/vote/stg/
   prune: true
   sourceRef:
     kind: GitRepository

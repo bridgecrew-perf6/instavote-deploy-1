@@ -10,7 +10,7 @@ spec:
     name: results
     namespace: instavote
   interval: 1m0s
-  path: ./deploy/results/dev
+  path: ./kustomize/results/dev
   prune: true
   sourceRef:
     kind: GitRepository
